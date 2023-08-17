@@ -1,4 +1,4 @@
-import { Button, Text, TextInput, Textarea } from '@mantine/core';
+import { Button, Loader, Text, TextInput, Textarea } from '@mantine/core';
 import { useStyles } from './styles';
 
 import { useTranslation } from 'react-i18next';
@@ -7,9 +7,11 @@ import { notifications } from '@mantine/notifications';
 import { useForm } from '@mantine/form';
 import axios from 'axios';
 import Contact from '../Contact';
+import { useState } from 'react';
 export default function Footer() {
   const { classes, cx } = useStyles();
   const { t } = useTranslation();
+  const [isSent, setIsSent] = useState(false);
   const form = useForm({
     initialValues: {
       email: '',
@@ -23,11 +25,13 @@ export default function Footer() {
   });
 
   const sendMessage = () => {
+    setIsSent(true);
     axios
       .post('https://server-oasis-perfume.onrender.com/api/v1/portfolio', {
         ...form.values,
       })
       .then(() => {
+        setIsSent(false);
         notifications.show({
           title: 'Thông báo',
           message:
@@ -40,7 +44,16 @@ export default function Footer() {
       .catch((err) => console.log(err));
   };
   return (
-    <div className={cx(classes.root, 'mobile:h-full mobile:flex-col')}>
+    <div className={cx(classes.root, 'relative mobile:h-full mobile:flex-col')}>
+      <div
+        className={`absolute z-10 h-full w-full bg-[#fffafa91] ${
+          isSent ? 'block' : 'hidden'
+        }`}
+      >
+        <div className="flex h-full w-full items-center justify-center">
+          <Loader />
+        </div>
+      </div>
       <div
         className={cx(
           'w-2/5 mobile:h-1/3 mobile:w-full mobile:items-center mobile:p-0 mobile:text-center',

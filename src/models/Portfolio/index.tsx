@@ -26,7 +26,7 @@ export default function Portfolio() {
           classes.rightSection,
         )}
       >
-        <div className="absolute top-[40%] left-[10%] w-1/2 mobile:left-0 mobile:top-[30%] mobile:top-[10%] mobile:w-full mobile:p-[20px] mobile:px-5 tablet:left-[15%]">
+        <div className="absolute top-[40%] left-[10%] w-1/2 mobile:left-0  mobile:top-[10%] mobile:w-full mobile:p-[20px] mobile:px-5 tablet:left-[15%]">
           <div>
             <Text>{t('portfolio.t1')}</Text>
             <a
