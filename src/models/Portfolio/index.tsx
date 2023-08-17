@@ -15,7 +15,7 @@ export default function Portfolio() {
           classes.leftSection,
         )}
       >
-        <div className="absolute top-[30%] right-[10%] mobile:right-[25%] tablet:top-[40%]">
+        <div className="absolute top-[40%] right-[10%] mobile:right-[25%] ">
           <Text className={classes.titleExp}>{t('portfolio.portfolio')}</Text>
           <Text>{t('portfolio.subPortfolio')}</Text>
         </div>
