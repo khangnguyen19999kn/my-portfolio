@@ -1,0 +1,47 @@
+{
+  "intro": {
+    "t1": "51/1 đường Thái Bình,huyện Hóc Môn, thành phố HCM ",
+    "intro": "Giới thiệu",
+    "subIntro": "Đây là giới thiệu về bản thân tôi",
+    "t2": "Tôi là ứng viên mới trong lĩnh vực Công nghệ thông tin và tôi có mong muốn khám phá và phát triển sự nghiệp của mình trong lĩnh vực này. Tôi nhanh nhẹn và có khả năng học hỏi nhanh, luôn nỗ lực hoàn thành công việc với tinh thần trách nhiệm cao.",
+    "t3": "Tôi có hiểu biết cơ bản về lập trình và các công nghệ phần mềm. Tôi đã tham gia vào các dự án và hoạt động trong các câu lạc bộ IT, để có thêm những hiểu biết về làm việc trong môi trường phát triển phần mềm và cách tương tác với đồng nghiệp.",
+    "t4": "Tôi nhanh nhẹn và có khả năng học hỏi nhanh, luôn nỗ lực hoàn thành công việc với tinh thần trách nhiệm cao.",
+    "t5": "Tôi sẵn sàng làm việc độc lập hoặc trong một nhóm, học hỏi từ đồng nghiệp và đưa ra ý tưởng mới để cải thiện hiệu quả công việc. Tôi hy vọng được tham gia vào một dự án phần mềm thực tế để phát triển kỹ năng và đóng góp vào sự thành công của công ty."
+  },
+  "skills": {
+    "skills": "Những kỹ năng của tôi",
+    "subSkills": "Đây là những kỹ năng tôi thành thạo nhất ngoài ra còn 1 số kỹ năng khác",
+    "note": "Lưu ý: Phần trăm chỉ là một số tham khảo"
+  },
+  "experience": {
+    "experience": "Kinh nghiệm của tôi",
+    "t1": "Kinh nghiệm của tôi kể từ khi bắt đầu học lập trình",
+    "t2": "Tốt nghiệp Đại học Nông Lâm, Lý do tôi tốt nghiệp muộn là do tôi đã dành nhiều thời gian cho công việc và đây là một trong những điều tôi hối tiếc",
+    "t3": "Là một nhà phát triển web cho một trong những công ty game hàng đầu thế giới học được rất nhiều kiến thức mới từ các người đi trước",
+    "t4": "Dạy các ngôn ngữ lập trình cho trẻ em tại Trung tâm ICANTECH 1 là một trong những trung tâm hàng đầu chuyên về giảng dạy các ngôn ngữ lập trình cho trẻ em tại Việt Nam.",
+    "t5": "Nhận được công việc IT đầu tiên của tôi tại Vieon và đó là một công việc bán thời gian",
+    "t6": "Bắt đầu học java, ngôn ngữ lập trình đầu tiên của tôi tại Đại học",
+    "time1": "2017",
+    "time2": "03/2019-05/2019",
+    "time3": "04/2022 - Hiện tại",
+    "time4": "09/2022 - Hiện tại",
+    "time5": "05/2024",
+    "title1": "Tốt nghiệp Đại học",
+    "title2": "Frontend Developer tại NEXON Dev VINA",
+    "title3": "Giảng viên lập trình tại ICANTECH",
+    "title4": "Công việc liên quan đến IT đầu tiên",
+    "title5": "Học tại Đại học Nông Lâm"
+  },
+  "portfolio": {
+    "portfolio": "Hồ sơ của tôi",
+    "subPortfolio": "Các dự án mà tôi đã thực hiện",
+    "t1": "Hầu hết các dự án mà tôi thực hiện cho công ty đều phải được bảo mật, vì vậy tôi chỉ có thể chia sẻ một số dự án cá nhân, bạn có thể truy cập trang git của tôi để xem mã nguồn mở"
+  },
+  "contact": {
+    "contact": "Liên hệ",
+    "subContact": "Bạn có thể liên hệ với tôi bất cứ lúc nào",
+    "t1": "Nhập email của bạn",
+    "t2": "Nhập tin nhắn bạn cần gửi cho tôi ở đây",
+    "t3": "Bạn có thể liên hệ nhanh với tôi tại đây"
+  }
+}

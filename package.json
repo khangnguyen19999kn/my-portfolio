@@ -1,0 +1,47 @@
+{
+  "name": "template-vite-react-ts-tailwind-v3",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "11.10.6",
+    "@mantine/core": "6.0.6",
+    "@mantine/form": "6.0.19",
+    "@mantine/hooks": "6.0.6",
+    "@mantine/notifications": "6.0.19",
+    "@tabler/icons-react": "2.14.0",
+    "axios": "1.4.0",
+    "gsap": "3.11.5",
+    "i18next": "22.4.14",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-gsap": "3.2.1",
+    "react-i18next": "12.2.0"
+  },
+  "devDependencies": {
+    "@nabla/vite-plugin-eslint": "1.5.0",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.33",
+    "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "5.40.1",
+    "@typescript-eslint/parser": "5.40.1",
+    "@vitejs/plugin-react-swc": "3.0.1",
+    "autoprefixer": "10.4.12",
+    "eslint": "8.25.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.10",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "postcss": "8.4.21",
+    "prettier": "2.7.1",
+    "prettier-plugin-tailwindcss": "0.1.13",
+    "sass": "1.60.0",
+    "tailwindcss": "3.2.4",
+    "typescript": "4.9.4",
+    "vite": "4.1.1"
+  }
+}

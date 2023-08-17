@@ -1,0 +1,47 @@
+{
+  "intro": {
+    "t1": "51/1 Thai Binh street,Hoc Mon district, HCM city",
+    "intro": "Intro",
+    "subIntro": "What I am all about",
+    "t2": "-I am a new candidate in the field of Information Technology and I have a desire to explore and develop my career in this field. I am quick and able to learn fast, and always strive to complete work with a highsense of responsibility.",
+    "t3": "-I have a basic understanding of programming and software technologies.I have participated in projects and activities in IT clubs, to gainmore insights into working in a software development environment and how to interact with colleagues.",
+    "t4": "-I am quick and able to learn fast, and always strive to complete work with a high sense of responsibility.",
+    "t5": "-I am ready to work independently or in a team, learn from colleagues and suggest new ideas to improve work efficiency. I hope to participate in a real software project to develop my skills and contribute to the success of the company."
+  },
+  "skills": {
+    "skills": "My Skills",
+    "subSkills": "Here are the skills I am most proficient in, along with some other skills",
+    "note": "Note: The percentages are just for reference"
+  },
+  "experience": {
+    "experience": "My Experience",
+    "t1": "My experience since starting to learn programming",
+    "t2": "Graduated from Nong Lam University,The reason I graduated late was because I spent more time at work and this is one of my regrets",
+    "t3": "A web developer for one of the world's leading game companies learns a lot of new knowledge from seniors",
+    "t4": "Teaching programming languages to children at ICANTECH 1 center is one of the leading centers specializing in teaching programming languages for children in Vietnam.",
+    "t5": "Got my first IT job at Vieon and it's a part time job",
+    "t6": "Started learning java my first programming language at University",
+    "time1": "2017",
+    "time2": "03/2019-05/2019",
+    "time3": "04/2022 - Present",
+    "time4": "09/2022 - Present",
+    "time5": "05/2024",
+    "title1": "Graduated from University",
+    "title2": "Frontend Developer at NEXON Dev VINA",
+    "title3": "Programming Instructor at ICANTECH",
+    "title4": "First job related to IT",
+    "title5": "Study at Nong Lam University"
+  },
+  "portfolio": {
+    "portfolio": "Portfolio",
+    "subPortfolio": "Projects I've done",
+    "t1": "Most of the projects I do on the company are required to be private, so I can only share some personal projects you can go to my git page to see the open source"
+  },
+  "contact": {
+    "contact": "Contact",
+    "subContact": "You can contact me anytime",
+    "t1": "Type your email here",
+    "t2": "Type your message you want send for me here",
+    "t3": "You can quickly contact me here"
+  }
+}
