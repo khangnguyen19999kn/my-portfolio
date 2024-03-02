@@ -3,6 +3,7 @@ import { useStyles } from './styles';
 import { IconBrandFacebookFilled } from '@tabler/icons-react';
 import img from '@/public/images/325618096_916058312744106_937079095616907402_n.jpg';
 import Contact from '../Contact';
+import TextBlind from '@/components/TextBlind/TextBlind';
 
 export default function AvartaInfo() {
   const { classes, cx } = useStyles();
@@ -59,15 +60,10 @@ export default function AvartaInfo() {
               >
                 Khang
               </Text>
-              <Text
-                className={cx(
-                  classes.textPosition,
-                  classes.text,
-                  'mobile:text-[18px]',
-                )}
-              >
-                Web Developer & Front-end Expert
-              </Text>
+              <TextBlind
+                text="Web Developer"
+                className={classes.textPosition}
+              />
             </div>
           </div>
           <div className="grpBtn  w-1/3 mobile:mt-[5px] mobile:flex mobile:w-full mobile:justify-center tablet:absolute tablet:top-[80%] tablet:right-[25%]">

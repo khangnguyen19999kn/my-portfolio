@@ -1,6 +1,7 @@
 import { Highlight, Text } from '@mantine/core';
 import { useStyles } from './styles';
 import { useTranslation } from 'react-i18next';
+import TypingText from './components/TypingText';
 
 export default function Intro() {
   const { classes, cx } = useStyles();
@@ -22,46 +23,9 @@ export default function Intro() {
           classes.rightSection,
         )}
       >
-        <Highlight
-          highlight="egestas"
-          className={cx(
-            classes.contentIntro,
-            'mobile:w-full mobile:text-[10px]',
-          )}
-          highlightStyles={{ backgroundColor: '#00000000', color: 'red' }}
-        >
-          {t('intro.t2')}
-        </Highlight>
-        <Highlight
-          highlight="egestas"
-          className={cx(
-            classes.contentIntro,
-            'mobile:w-full mobile:text-[10px]',
-          )}
-          highlightStyles={{ backgroundColor: '#00000000', color: 'red' }}
-        >
-          {t('intro.t3')}
-        </Highlight>
-        <Highlight
-          highlight="egestas"
-          className={cx(
-            classes.contentIntro,
-            'mobile:w-full mobile:text-[10px]',
-          )}
-          highlightStyles={{ backgroundColor: '#00000000', color: 'red' }}
-        >
-          {t('intro.t4')}
-        </Highlight>
-        <Highlight
-          highlight="egestas"
-          className={cx(
-            classes.contentIntro,
-            'mobile:w-full mobile:text-[10px]',
-          )}
-          highlightStyles={{ backgroundColor: '#00000000', color: 'red' }}
-        >
-          {t('intro.t5')}
-        </Highlight>
+        <div>
+          <TypingText text={t('intro.t2')} speed={20} />
+        </div>
       </div>
     </div>
   );

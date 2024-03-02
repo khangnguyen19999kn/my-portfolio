@@ -44,15 +44,7 @@ export default function AvartaInfo() {
           </Text>
         </a>
       </div>
-      {/* <div className="h-[50px] border-l border-[gray] mobile:h-[1px] mobile:border-t"></div>
-      <div className="mobile:flex mobile:h-full mobile:flex-col mobile:items-center">
-        <Text className={classes.textTitleInfo}>Web</Text>
-        <Text
-          className={cx(classes.textInfo, classes.text, 'mobile:text-[12px]')}
-        >
-          khangnguyenprofile.cc
-        </Text>
-      </div> */}
+
       <div className="h-[50px] border-l border-[gray] mobile:h-[1px] mobile:border-t tablet:m-[auto] tablet:h-1 tablet:w-[20%] tablet:border-none tablet:bg-red-200"></div>
       <div className="mobile:flex mobile:h-full mobile:flex-col mobile:items-center tablet:text-center">
         <Text className={classes.textTitleInfo}>Email</Text>

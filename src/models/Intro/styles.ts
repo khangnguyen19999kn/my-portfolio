@@ -25,10 +25,11 @@ export const useStyles = createStyles((theme) => ({
     backgroundColor: theme.colorScheme === 'dark' ? '#2b2c2c' : '#fcfcfc',
   },
   contentIntro: {
-    fontSize: '1.22rem',
     lineHeight: '28px',
     color: '#979899',
     marginTop: '10px',
+    font: 'italic 1.2rem "Fira Sans", serif',
+    textTransform: 'none',
   },
   titleIntro: {
     fontSize: '2rem',
