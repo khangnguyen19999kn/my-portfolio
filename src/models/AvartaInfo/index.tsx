@@ -22,15 +22,22 @@ export default function AvartaInfo() {
             'flex h-5/6  items-center justify-end pr-[50px] mobile:h-full mobile:justify-center mobile:pr-0',
           )}
         >
-          <Avatar
-            size={220}
-            src={img}
-            href="https://www.facebook.com/khangnguyen20.04/"
-            component="a"
-            radius={'xl'}
-            color="red"
-            className={classes.avatar}
-          />
+          <div className="flex flex-col">
+            <div className={classes.wrapperAvatar}>
+              <Avatar
+                size={220}
+                src={img}
+                href="https://www.facebook.com/khangnguyen20.04/"
+                component="a"
+                radius={'xl'}
+                color="red"
+                className={classes.avatar}
+              />
+            </div>
+            <div className="h-[80px]">
+              <div className={classes.shadowAvatar} />
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -58,7 +65,7 @@ export default function AvartaInfo() {
                   'mobile:text-[24px]',
                 )}
               >
-                Khang
+                <p className={classes.lastName}>Khang</p>
               </Text>
               <TextBlind
                 text="Web Developer"

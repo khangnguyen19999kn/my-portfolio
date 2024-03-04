@@ -1,4 +1,5 @@
 import { createStyles, getStylesRef, keyframes } from '@mantine/core';
+import { text } from 'stream/consumers';
 
 const fadeIn = keyframes({
   from: {
@@ -29,7 +30,42 @@ const showUp = keyframes({
     opacity: 1,
   },
 });
-
+const changeColorTextInfinity = keyframes({
+  '0%': {
+    color: '#feea98',
+  },
+  '25%': {
+    color: '#fdd733',
+  },
+  '50%': {
+    color: '#feb200',
+  },
+  '75%': {
+    color: '#f14b20',
+  },
+  '100%': {
+    color: '#ffffff',
+  },
+});
+const shadowAvatar = keyframes({
+  '0%': { padding: '5px', opacity: '0.10 ', marginTop: '20px' },
+  '50%': { padding: '15px', opacity: '0.18', marginTop: '10px' },
+  '100%': { padding: '5px', opacity: '0.10', marginTop: '20px' },
+});
+const bounce = keyframes({
+  '0%': {
+    marginTop: '15px',
+    marginBottom: '10px',
+  },
+  '50%': {
+    marginTop: '22px',
+    marginBottom: '3px',
+  },
+  '100%': {
+    marginTop: '15px',
+    marginBottom: '10px',
+  },
+});
 export const useStyles = createStyles((theme) => ({
   leftSection: {
     backgroundColor: theme.colorScheme === 'dark' ? '#2b2c2c' : '#fbfbfb',
@@ -46,8 +82,11 @@ export const useStyles = createStyles((theme) => ({
     fontSize: '67px',
     fontWeight: 'bold',
     color: '#e0a80d',
-
     animation: `${fadeIn} 3s ease-in-out forwards`,
+  },
+  lastName: {
+    transition: `all 0.3s ease-in-out`,
+    animation: `${changeColorTextInfinity} 3s ease-in-out infinite`,
   },
   iconFB: {
     color: '#717273',
@@ -85,6 +124,17 @@ export const useStyles = createStyles((theme) => ({
   },
   avatar: {
     borderRadius: '100px',
+    animation: `${bounce} 2s infinite`,
+  },
+  shadowAvatar: {
+    width: '150px',
+    height: '20px',
+    borderRadius: '100%',
+    backgroundColor: '#2F2D2C',
+    margin: '20px auto 0 auto',
+    animation: `${shadowAvatar} 2s infinite`,
+  },
+  wrapperAvatar: {
     animation: `${showUp} 3s ease-in-out forwards`,
   },
 }));
