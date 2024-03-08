@@ -1,4 +1,5 @@
 import { createStyles, getStylesRef, keyframes } from '@mantine/core';
+import { all } from 'axios';
 import { text } from 'stream/consumers';
 
 const fadeIn = keyframes({
@@ -74,19 +75,29 @@ export const useStyles = createStyles((theme) => ({
     backgroundColor: theme.colorScheme === 'dark' ? '#2d2e2e' : '#fff',
   },
   textFirstName: {
-    fontSize: '60px',
+    fontSize: '70px',
     color: '#a4a5a6',
     animation: `${fadeIn} 3s ease-in-out forwards`,
+    fontFamily: `"Dancing Script", cursive`,
+    fontOpticalSizing: 'auto',
+    fontWeight: 400,
+    fontStyle: 'normal',
+    textTransform: 'capitalize',
   },
   textLastName: {
-    fontSize: '67px',
+    fontSize: '80px',
     fontWeight: 'bold',
     color: '#e0a80d',
     animation: `${fadeIn} 3s ease-in-out forwards`,
   },
   lastName: {
     transition: `all 0.3s ease-in-out`,
-    animation: `${changeColorTextInfinity} 3s ease-in-out infinite`,
+    animation: `${changeColorTextInfinity} 2s ease-in-out infinite`,
+    fontFamily: `"Dancing Script", cursive`,
+    fontOpticalSizing: 'auto',
+    fontWeight: 400,
+    fontStyle: 'normal',
+    textTransform: 'capitalize',
   },
   iconFB: {
     color: '#717273',
