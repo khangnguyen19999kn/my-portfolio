@@ -30,6 +30,11 @@ export const useStyles = createStyles((theme) => ({
   },
   textInfo: {
     color: '#979899',
+    fontFamily: `"Dancing Script", cursive`,
+    fontOpticalSizing: 'auto',
+    fontWeight: 400,
+    fontStyle: 'normal',
+    textTransform: 'capitalize',
   },
   textTitleInfo: {
     color: '#979899',

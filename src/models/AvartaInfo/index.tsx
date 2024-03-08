@@ -53,7 +53,7 @@ export default function AvartaInfo() {
                 className={cx(
                   classes.textFirstName,
                   classes.text,
-                  'mobile:text-[24px]',
+                  'mobile:text-[40px]',
                 )}
               >
                 Nguyen Nguyen
@@ -62,7 +62,7 @@ export default function AvartaInfo() {
                 className={cx(
                   classes.textLastName,
                   classes.text,
-                  'mobile:text-[24px]',
+                  'mobile:text-[40px]',
                 )}
               >
                 <p className={classes.lastName}>Khang</p>
