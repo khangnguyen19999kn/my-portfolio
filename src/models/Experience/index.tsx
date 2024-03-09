@@ -66,6 +66,7 @@ export default function Experience() {
       { threshold: 0.1 },
     );
     observer.observe(experineceRef.current as Element);
+    return () => observer.disconnect();
   }, [currentItem]);
   useEffect(() => {
     const timer = setInterval(() => {

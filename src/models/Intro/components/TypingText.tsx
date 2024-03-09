@@ -11,7 +11,7 @@ export default function TypingText({ text, speed }: ITypingText) {
   const { classes } = useStyles();
   const [displayText, setDisplayText] = useState('');
   const [isVisible, setIsVisible] = useState(false);
-  const elementRef = useRef(null);
+  const elementRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const updateDisplayText = () => {
       setDisplayText('');
@@ -27,24 +27,19 @@ export default function TypingText({ text, speed }: ITypingText) {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(entry.target);
+        } else {
+          setIsVisible(false);
+          setDisplayText('');
         }
-      });
-    });
-
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
-
-    return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
-      }
-    };
+      },
+      { threshold: 0.1 },
+    );
+    observer.observe(elementRef.current as Element);
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
