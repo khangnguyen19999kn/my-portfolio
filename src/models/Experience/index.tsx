@@ -31,7 +31,7 @@ export default function Experience() {
           classes.rightSection,
         )}
       >
-        <Timeline active={3} bulletSize={30} lineWidth={2}>
+        <Timeline active={2} bulletSize={30} lineWidth={2}>
           <Timeline.Item
             bullet={<IconBriefcase size={14} />}
             title={t('experience.title2')}
