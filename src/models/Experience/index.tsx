@@ -31,18 +31,7 @@ export default function Experience() {
           classes.rightSection,
         )}
       >
-        <Timeline active={2} bulletSize={30} lineWidth={2}>
-          <Timeline.Item
-            bullet={<IconCircleCheckFilled size={12} />}
-            title={t('experience.title1')}
-          >
-            <Text color="dimmed" size="sm" className="mobile:text-[12px]">
-              {t('experience.t2')}
-            </Text>
-            <Text size="xs" mt={4}>
-              {t('experience.time5')}
-            </Text>
-          </Timeline.Item>
+        <Timeline active={3} bulletSize={30} lineWidth={2}>
           <Timeline.Item
             bullet={<IconBriefcase size={14} />}
             title={t('experience.title2')}
@@ -52,6 +41,17 @@ export default function Experience() {
             </Text>
             <Text size="xs" mt={4}>
               {t('experience.time4')}
+            </Text>
+          </Timeline.Item>
+          <Timeline.Item
+            bullet={<IconCircleCheckFilled size={12} />}
+            title={t('experience.title6')}
+          >
+            <Text color="dimmed" size="sm" className="mobile:text-[12px]">
+              {t('experience.t7')}
+            </Text>
+            <Text size="xs" mt={4}>
+              {t('experience.time6')}
             </Text>
           </Timeline.Item>
 

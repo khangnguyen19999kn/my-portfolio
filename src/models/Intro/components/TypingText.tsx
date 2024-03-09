@@ -6,7 +6,6 @@ import i18next from 'i18next';
 interface ITypingText {
   text: string;
   speed: number;
-  className?: string;
 }
 export default function TypingText({ text, speed }: ITypingText) {
   const { classes } = useStyles();
