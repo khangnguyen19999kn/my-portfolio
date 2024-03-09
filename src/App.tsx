@@ -124,13 +124,13 @@ function App() {
               </div>
             </div>
           </section>
-          <section className="third">
+          {/* <section className="third">
             <div className="outer">
               <div className="inner">
                 <Skill />
               </div>
             </div>
-          </section>
+          </section> */}
           <section className="fourth">
             <div className="outer">
               <div className="inner">

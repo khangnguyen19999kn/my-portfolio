@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useStyles } from '../styles';
 import React from 'react';
+import i18next from 'i18next';
 
 interface ITypingText {
   text: string;
@@ -12,6 +13,19 @@ export default function TypingText({ text, speed }: ITypingText) {
   const [displayText, setDisplayText] = useState('');
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
+  useEffect(() => {
+    const updateDisplayText = () => {
+      setDisplayText('');
+    };
+
+    i18next.on('languageChanged', updateDisplayText);
+
+    updateDisplayText();
+
+    return () => {
+      i18next.off('languageChanged', updateDisplayText);
+    };
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
