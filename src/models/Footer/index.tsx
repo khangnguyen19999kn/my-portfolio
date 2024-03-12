@@ -82,7 +82,10 @@ export default function Footer() {
               className="mt-3"
               placeholder={t('contact.t2') || ''}
             />
-            <Button type="submit" className={cx('mt-3', classes.buttonSend)}>
+            <Button
+              type="submit"
+              className={cx('mx-auto mt-3', classes.buttonSend)}
+            >
               Gửi
             </Button>
           </form>

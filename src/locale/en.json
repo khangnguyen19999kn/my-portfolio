@@ -43,5 +43,9 @@
     "t1": "Type your email here",
     "t2": "Type your message you want send for me here",
     "t3": "You can quickly contact me here"
+  },
+  "error": {
+    "t1": "Sorry, this site is not supported on mobile",
+    "t2": "Please visit on a desktop"
   }
 }

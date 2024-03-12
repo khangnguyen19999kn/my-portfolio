@@ -1,18 +1,27 @@
+import { useTranslation } from 'react-i18next';
+import { useNotSupportStyle } from './notSupportStyle';
 export default function NotSupport() {
+  const { classes, cx } = useNotSupportStyle();
+  const { t } = useTranslation();
   return (
-    <div className=" mt-20 h-full w-full">
-      <div className="flex justify-center">
+    <div className={classes.root}>
+      <div className="mt-20 flex justify-center">
         <img
           src="https://cdn-icons-png.flaticon.com/512/6023/6023986.png"
           alt="mobile"
         />
       </div>
       <div className="mt-20">
-        <h1 className="animate-pulse bg-red-300 text-center text-xl font-semibold">
-          Sorry, this site is not supported on mobile
+        <h1
+          className={cx(
+            classes.text,
+            'animate-pulse bg-red-300 text-center text-xl font-semibold',
+          )}
+        >
+          {t('error.t1')}
         </h1>
-        <p className="text-center text-2xl font-normal">
-          Please visit on a desktop
+        <p className={cx(classes.text, 'text-center text-2xl font-normal')}>
+          {t('error.t2')}
         </p>
       </div>
     </div>
