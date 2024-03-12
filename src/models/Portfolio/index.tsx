@@ -46,11 +46,12 @@ export default function Portfolio() {
           </div> */}
           <div className="flex h-1/2 flex-wrap justify-around">
             {listPortfolio.map((item) => (
-              <div className="mt-5" key={item.link}>
+              <div className="mt-5 mr-5" key={item.link}>
                 <Card
                   listArticle={item.listArticle}
                   imageIds={item.imageIds}
                   link={item.link}
+                  banner={item.banner}
                 />
               </div>
             ))}

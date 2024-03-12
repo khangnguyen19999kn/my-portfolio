@@ -1,4 +1,4 @@
-import { Highlight, Text } from '@mantine/core';
+import { Text } from '@mantine/core';
 import { useStyles } from './styles';
 import { useTranslation } from 'react-i18next';
 import TypingText from './components/TypingText';

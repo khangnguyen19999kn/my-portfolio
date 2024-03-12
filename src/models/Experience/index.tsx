@@ -3,7 +3,6 @@ import { useStyles } from './styles';
 import { IconBook2, IconBriefcase } from '@tabler/icons-react';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
-import { t } from 'i18next';
 
 const timeLineItems = [
   {

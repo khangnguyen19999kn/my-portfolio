@@ -1,6 +1,4 @@
 import { createStyles, getStylesRef, keyframes } from '@mantine/core';
-import { all } from 'axios';
-import { text } from 'stream/consumers';
 
 const fadeIn = keyframes({
   from: {
