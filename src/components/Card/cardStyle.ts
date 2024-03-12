@@ -39,6 +39,10 @@ export const cardStyle = createStyles(
       borderRadius: '10px',
       boxShadow: '0 0 10px 0px black',
       position: 'relative',
+      '@media (max-width: 1919px ) and (min-width:1279px) ': {
+        width: '250px',
+        height: '200px',
+      },
     },
     banner: {
       position: 'absolute',
@@ -56,6 +60,12 @@ export const cardStyle = createStyles(
       fontWeight: 400,
       fontOpticalSizing: 'auto',
       backgroundColor: backgroundBanner,
+      '@media (max-width: 1919px ) and (min-width:1279px) ': {
+        clipPath: 'polygon(18% 0%, 75% -9%, 97% 100%, 2% 100%)',
+        top: '15%',
+        right: '-40px',
+        width: '155px',
+      },
     },
     windowControlButtons: {
       width: '100%',
@@ -103,6 +113,9 @@ export const cardStyle = createStyles(
       [`&:hover .${getStylesRef('buttonLink')}`]: {
         animation: `${fadeUp} 1.5s ease-in forwards`,
         transition: 'all 1s ease-in',
+      },
+      '@media (max-width: 1919px ) and (min-width:1279px) ': {
+        height: '180px',
       },
     },
     imageMainCard: {

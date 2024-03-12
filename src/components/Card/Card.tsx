@@ -1,7 +1,5 @@
 import { cardStyle } from '@/components/Card/cardStyle';
 import { getURLImage } from '@/const/utils';
-import { Modal } from 'antd/lib';
-import { useDisclosure } from '@mantine/hooks';
 import { IconX } from '@tabler/icons-react';
 import { IconMinus } from '@tabler/icons-react';
 import { IconArrowsDiagonal } from '@tabler/icons-react';

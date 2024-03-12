@@ -44,9 +44,9 @@ export default function Portfolio() {
               </Button>
             </a>
           </div> */}
-          <div className="flex h-1/2 flex-wrap justify-around">
+          <div className="flex h-1/2 flex-wrap justify-around laptop:h-4/5 desktop:h-4/5">
             {listPortfolio.map((item) => (
-              <div className="mt-5 mr-5" key={item.link}>
+              <div className="mt-5 mr-5" key={item.imageIds[0]}>
                 <Card
                   listArticle={item.listArticle}
                   imageIds={item.imageIds}

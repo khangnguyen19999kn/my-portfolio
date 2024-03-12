@@ -10,7 +10,7 @@ export const listPortfolio: ICardProps[] = [
     ],
     link: 'https://oasisfragrance.shop/',
     banner: {
-      backgroundBanner: '#228be6',
+      backgroundBanner: '#228be680',
       textBanner: 'Live',
     },
   },
@@ -22,7 +22,7 @@ export const listPortfolio: ICardProps[] = [
     ],
     link: 'https://github.com/khangnguyen19999kn/Coffee-Project/tree/main/coffee',
     banner: {
-      backgroundBanner: 'red',
+      backgroundBanner: '#ff000094',
       textBanner: 'GIT',
     },
   },
@@ -34,7 +34,7 @@ export const listPortfolio: ICardProps[] = [
     ],
     link: 'https://github.com/khangnguyen19999kn/tabloid-news-fe',
     banner: {
-      backgroundBanner: 'red',
+      backgroundBanner: '#ff000094',
       textBanner: 'GIT',
     },
   },
@@ -46,7 +46,7 @@ export const listPortfolio: ICardProps[] = [
     ],
     link: 'https://oasisfragrance.shop/',
     banner: {
-      backgroundBanner: 'red',
+      backgroundBanner: '#ff000094',
       textBanner: 'GIT',
     },
   },
@@ -58,7 +58,7 @@ export const listPortfolio: ICardProps[] = [
     ],
     link: 'https://oasisfragrance.shop/',
     banner: {
-      backgroundBanner: 'red',
+      backgroundBanner: '#ff000094',
       textBanner: 'GIT',
     },
   },

@@ -3,22 +3,23 @@ import {
   ColorSchemeProvider,
   MantineProvider,
 } from '@mantine/core';
-import { useHotkeys, useLocalStorage } from '@mantine/hooks';
+import { useHotkeys, useLocalStorage, useViewportSize } from '@mantine/hooks';
 import gsap from 'gsap';
 import { Observer } from 'gsap/all';
 import { useLayoutEffect } from 'react';
 import AvartaInfo from './models/AvartaInfo';
 import Intro from './models/Intro';
-import Skill from './models/Skill';
 import ToggleTheme from './components/ToggleTheme';
 import Experience from './models/Experience';
 import Portfolio from './models/Portfolio';
 import Footer from './models/Footer';
 import ToggleLanguage from './components/ToggleLanguage';
+import NotSupport from '@/components/NotSupport/NotSupport';
 
 gsap.registerPlugin(Observer);
 
 function App() {
+  const { width } = useViewportSize();
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
     key: 'mantine-color-scheme',
     defaultValue: 'light',
@@ -124,13 +125,6 @@ function App() {
               </div>
             </div>
           </section>
-          {/* <section className="third">
-            <div className="outer">
-              <div className="inner">
-                <Skill />
-              </div>
-            </div>
-          </section> */}
           <section className="fourth">
             <div className="outer">
               <div className="inner">
@@ -141,7 +135,7 @@ function App() {
           <section className="fifth">
             <div className="outer">
               <div className="inner">
-                <Portfolio />
+                {width > 1279 ? <Portfolio /> : <NotSupport />}
               </div>
             </div>
           </section>
