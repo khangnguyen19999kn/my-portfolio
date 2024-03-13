@@ -3,37 +3,68 @@ import { getURLImage } from '@/const/utils';
 import { IconX } from '@tabler/icons-react';
 import { IconMinus } from '@tabler/icons-react';
 import { IconArrowsDiagonal } from '@tabler/icons-react';
+import { useState } from 'react';
+
 type TBanner = {
   backgroundBanner: string;
   textBanner: string;
 };
-export interface ICardProps {
+export interface ICard {
+  id: number;
+  title: string;
   listArticle: string[];
   imageIds: [string, string];
   link: string;
   banner: TBanner;
+  isHidden?: boolean;
+}
+interface ICardProps {
+  card: ICard;
+  onMinusChange: (item: ICard) => void;
+  onActionRepo: (item: ICard, action: 'open' | 'remove') => void;
 }
 export default function Card({
-  listArticle,
-  imageIds,
-  link,
-  banner,
+  card,
+  onMinusChange,
+  onActionRepo,
 }: ICardProps) {
+  const { listArticle, imageIds, link, banner, title } = card;
   const { backgroundBanner, textBanner } = banner;
-  const { classes, cx } = cardStyle({ backgroundBanner });
+  const [isClose, setIsClose] = useState(false);
+  const [isMinimize, setIsMinimize] = useState(false);
+  const { classes, cx } = cardStyle({ backgroundBanner, isClose, isMinimize });
   return (
     <div className={classes.containerCard}>
       <div className={classes.banner}>{textBanner}</div>
       <div className={classes.windowControlButtons}>
-        <div className={cx(classes.controlButton, classes.closeButton)}>
-          <IconX className={classes.iconControlButton} />
+        <div className="flex">
+          <button
+            onClick={() => {
+              setIsClose(true);
+              setTimeout(() => {
+                onActionRepo(card, 'remove');
+              }, 500);
+            }}
+            className={cx(classes.controlButton, classes.closeButton)}
+          >
+            <IconX className={classes.iconControlButton} />
+          </button>
+          <button
+            onClick={() => {
+              setIsMinimize(true);
+              setTimeout(() => {
+                onMinusChange(card);
+              }, 500);
+            }}
+            className={cx(classes.controlButton, classes.minimizeButton)}
+          >
+            <IconMinus className={classes.iconControlButton} />
+          </button>
+          <div className={cx(classes.controlButton, classes.maximizeButton)}>
+            <IconArrowsDiagonal className={classes.iconControlButton} />
+          </div>
         </div>
-        <div className={cx(classes.controlButton, classes.minimizeButton)}>
-          <IconMinus className={classes.iconControlButton} />
-        </div>
-        <div className={cx(classes.controlButton, classes.maximizeButton)}>
-          <IconArrowsDiagonal className={classes.iconControlButton} />
-        </div>
+        <div className={classes.titleCardRepo}>{title}</div>
       </div>
       <div className={classes.mainCard}>
         <img

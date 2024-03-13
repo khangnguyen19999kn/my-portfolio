@@ -1,8 +1,9 @@
-import { ICardProps } from '@/components/Card/Card';
+import { ICard } from '@/components/Card/Card';
 
 export const GOOGLE_DRIVE_LINK = 'https://lh3.googleusercontent.com/d/';
-export const listPortfolio: ICardProps[] = [
+export const listPortfolio: ICard[] = [
   {
+    id: 1,
     listArticle: ['React', 'TypeScript', 'ExpressJS', 'MongoDB'],
     imageIds: [
       '1HLtHgjgVxp-SPIwPeGE5F2qYRYfE66Yu',
@@ -13,8 +14,10 @@ export const listPortfolio: ICardProps[] = [
       backgroundBanner: '#228be680',
       textBanner: 'Live',
     },
+    title: 'Oasis Fragrance',
   },
   {
+    id: 2,
     listArticle: ['React', 'SCSS', 'Redux', 'ExpressJS', 'SQL'],
     imageIds: [
       '1uxPKrvaZ-3TF2fs-4JZJ0C8efT3_aSHA',
@@ -25,8 +28,10 @@ export const listPortfolio: ICardProps[] = [
       backgroundBanner: '#ff000094',
       textBanner: 'GIT',
     },
+    title: 'Coffee Project Clone',
   },
   {
+    id: 3,
     listArticle: ['React', 'TypeScript', 'React-Query', 'ASP .NET', 'MongoDB'],
     imageIds: [
       '1_a_MWxyXigvjyflDr5gMJbtqJ9CcdzDI',
@@ -37,8 +42,10 @@ export const listPortfolio: ICardProps[] = [
       backgroundBanner: '#ff000094',
       textBanner: 'GIT',
     },
+    title: 'Tabloid News',
   },
   {
+    id: 4,
     listArticle: ['React', 'TypeScript', 'ExpressJS', 'MongoDB'],
     imageIds: [
       '1HLtHgjgVxp-SPIwPeGE5F2qYRYfE66Yu',
@@ -49,8 +56,10 @@ export const listPortfolio: ICardProps[] = [
       backgroundBanner: '#ff000094',
       textBanner: 'GIT',
     },
+    title: 'Oasis Fragrance 1',
   },
   {
+    id: 5,
     listArticle: ['React', 'TypeScript', 'ExpressJS', 'MongoDB'],
     imageIds: [
       '1HLtHgjgVxp-SPIwPeGE5F2qYRYfE66Yu',
@@ -61,5 +70,6 @@ export const listPortfolio: ICardProps[] = [
       backgroundBanner: '#ff000094',
       textBanner: 'GIT',
     },
+    title: 'Oasis Fragrance 2',
   },
 ];

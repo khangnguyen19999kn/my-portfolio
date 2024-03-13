@@ -1,44 +1,32 @@
-import { createStyles, keyframes, getStylesRef, px } from '@mantine/core';
+import {
+  dropDown,
+  fadeIn,
+  fadeOut,
+  fadeUp,
+  minimizeEffect,
+  openRepoEffect,
+} from '@/const/animation';
+import { createStyles, getStylesRef, px } from '@mantine/core';
 
-const dropDown = keyframes({
-  from: {
-    height: '0',
-  },
-  to: {
-    height: '100%',
-  },
-});
-const fadeIn = keyframes({
-  from: {
-    opacity: 0,
-    transform: 'translateY(-10px)',
-  },
-  to: {
-    opacity: 1,
-    transform: 'translateY(0)',
-  },
-});
-const fadeUp = keyframes({
-  from: {
-    opacity: 0,
-    transform: 'translateY(10px)',
-  },
-  to: {
-    opacity: 1,
-    transform: 'translateY(0)',
-  },
-});
 interface ICardStyle {
   backgroundBanner: string;
+  isClose: boolean;
+  isMinimize: boolean;
 }
+const checkAction = (isClose?: boolean, isMinimize?: boolean) => {
+  if (isClose) return `${fadeOut} .5s ease-in forwards`;
+  if (isMinimize) return `${minimizeEffect} 0.3s ease-in forwards`;
+  return `${openRepoEffect} 0.5s ease-in forwards`;
+};
 export const cardStyle = createStyles(
-  (_theme, { backgroundBanner }: ICardStyle) => ({
+  (_theme, { backgroundBanner, isClose, isMinimize }: ICardStyle) => ({
     containerCard: {
       width: '450px',
       height: '300px',
       borderRadius: '10px',
       boxShadow: '0 0 10px 0px black',
       position: 'relative',
+      animation: checkAction(isClose, isMinimize),
       '@media (max-width: 1919px ) and (min-width:1279px) ': {
         width: '250px',
         height: '200px',
@@ -75,6 +63,18 @@ export const cardStyle = createStyles(
       paddingLeft: '3px',
       borderRadius: '3px 3px 0 0',
       cursor: 'pointer',
+      position: 'relative',
+    },
+    titleCardRepo: {
+      position: 'absolute',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      fontFamily: '"Dancing Script", cursive',
+      fontSize: '15px',
+      width: '100%',
+      height: '100%',
+      pointerEvents: 'none',
     },
     controlButton: {
       width: '14px',

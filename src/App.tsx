@@ -111,7 +111,7 @@ function App() {
           <div className="absolute top-11 right-[100px] z-[100] mobile:top-3 mobile:right-1 laptop:right-[100px]">
             <ToggleLanguage />
           </div>
-          <section className="first">
+          {/* <section className="first">
             <div className="outer">
               <div className="inner">
                 <AvartaInfo />
@@ -131,7 +131,7 @@ function App() {
                 <Experience />
               </div>
             </div>
-          </section>
+          </section> */}
           <section className="fifth">
             <div className="outer">
               <div className="inner">

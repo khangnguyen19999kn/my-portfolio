@@ -19,7 +19,18 @@ module.exports = {
       bigDesktop: '2560px',
       // => @media (min-width: 2560px) { ... }
     },
-    extend: {},
+    extend: {
+      animation: {
+        fadeOut: 'fadeOut 2s ease-in',
+      },
+      keyframes: {
+        fadeOut: {
+          '0%': { opacity: 1 },
+          '50%': { opacity: 0.5 },
+          '100%': { opacity: 0 },
+        },
+      },
+    },
   },
   plugins: [],
 };
