@@ -1,5 +1,7 @@
 import { cardStyle } from '@/components/Card/cardStyle';
 import { getURLImage } from '@/const/utils';
+import { Modal } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
 import { IconX } from '@tabler/icons-react';
 import { IconMinus } from '@tabler/icons-react';
 import { IconArrowsDiagonal } from '@tabler/icons-react';
@@ -9,6 +11,10 @@ type TBanner = {
   backgroundBanner: string;
   textBanner: string;
 };
+type TMiniCard = {
+  logo: string;
+  backgroundColor: string;
+};
 export interface ICard {
   id: number;
   title: string;
@@ -17,6 +23,7 @@ export interface ICard {
   link: string;
   banner: TBanner;
   isHidden?: boolean;
+  miniCard?: TMiniCard;
 }
 interface ICardProps {
   card: ICard;
@@ -33,8 +40,18 @@ export default function Card({
   const [isClose, setIsClose] = useState(false);
   const [isMinimize, setIsMinimize] = useState(false);
   const { classes, cx } = cardStyle({ backgroundBanner, isClose, isMinimize });
+  const [opened, { open, close }] = useDisclosure(false);
+
   return (
     <div className={classes.containerCard}>
+      <Modal
+        opened={opened}
+        onClose={close}
+        size="100%"
+        classNames={{ content: classes.modalContent, body: classes.modalBody }}
+      >
+        <embed src={link} width="100%" height="100%" />
+      </Modal>
       <div className={classes.banner}>{textBanner}</div>
       <div className={classes.windowControlButtons}>
         <div className="flex">
@@ -60,9 +77,12 @@ export default function Card({
           >
             <IconMinus className={classes.iconControlButton} />
           </button>
-          <div className={cx(classes.controlButton, classes.maximizeButton)}>
+          <button
+            onClick={open}
+            className={cx(classes.controlButton, classes.maximizeButton)}
+          >
             <IconArrowsDiagonal className={classes.iconControlButton} />
-          </div>
+          </button>
         </div>
         <div className={classes.titleCardRepo}>{title}</div>
       </div>

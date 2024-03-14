@@ -22,6 +22,7 @@ module.exports = {
     extend: {
       animation: {
         fadeOut: 'fadeOut 2s ease-in',
+        customPing: 'ping 1s cubic-bezier(0, 0, 0.2, 1) forwards',
       },
       keyframes: {
         fadeOut: {

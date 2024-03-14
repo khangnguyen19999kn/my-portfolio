@@ -6,7 +6,7 @@ import {
   minimizeEffect,
   openRepoEffect,
 } from '@/const/animation';
-import { createStyles, getStylesRef, px } from '@mantine/core';
+import { createStyles, getStylesRef } from '@mantine/core';
 
 interface ICardStyle {
   backgroundBanner: string;
@@ -16,7 +16,7 @@ interface ICardStyle {
 const checkAction = (isClose?: boolean, isMinimize?: boolean) => {
   if (isClose) return `${fadeOut} .5s ease-in forwards`;
   if (isMinimize) return `${minimizeEffect} 0.3s ease-in forwards`;
-  return `${openRepoEffect} 0.5s ease-in forwards`;
+  return `${openRepoEffect} .5s ease-in forwards`;
 };
 export const cardStyle = createStyles(
   (_theme, { backgroundBanner, isClose, isMinimize }: ICardStyle) => ({
@@ -187,6 +187,14 @@ export const cardStyle = createStyles(
         backgroundColor: '#ffffff',
         color: '#000000',
       },
+    },
+    modalContent: {
+      width: '100%',
+      height: '100%',
+      overflow: 'hidden',
+    },
+    modalBody: {
+      height: '100%',
     },
   }),
 );

@@ -91,7 +91,7 @@ export default function Portfolio() {
             })}
           </div>
           {listMinusRepo.length > 0 && (
-            <div className="absolute bottom-0 flex h-[50px] w-full items-center justify-center bg-red-500">
+            <div className="absolute bottom-0 flex h-fit w-fit items-center justify-around rounded bg-gray-300 py-3 px-4 ">
               {listMinusRepo.map((item, index) => (
                 <MiniCard key={index} card={item} onShowRepo={onShowRepo} />
               ))}

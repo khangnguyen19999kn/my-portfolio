@@ -15,6 +15,11 @@ export const listPortfolio: ICard[] = [
       textBanner: 'Live',
     },
     title: 'Oasis Fragrance',
+    isHidden: true,
+    miniCard: {
+      backgroundColor: '#ffffff',
+      logo: '1CC0an4oLJJJVU2lAFWLWdgTMhRJuNAD8',
+    },
   },
   {
     id: 2,
@@ -29,6 +34,11 @@ export const listPortfolio: ICard[] = [
       textBanner: 'GIT',
     },
     title: 'Coffee Project Clone',
+    isHidden: true,
+    miniCard: {
+      backgroundColor: '#fea938',
+      logo: '19I4-fYzVy-qNcLPn0MtGCgY1-1iKARsW',
+    },
   },
   {
     id: 3,
@@ -43,6 +53,11 @@ export const listPortfolio: ICard[] = [
       textBanner: 'GIT',
     },
     title: 'Tabloid News',
+    isHidden: true,
+    miniCard: {
+      backgroundColor: '#ffffff',
+      logo: '1_pf6bQ-vwLpw27JzyHBo_N42Ng2tcynA',
+    },
   },
   {
     id: 4,
@@ -57,6 +72,11 @@ export const listPortfolio: ICard[] = [
       textBanner: 'GIT',
     },
     title: 'Oasis Fragrance 1',
+    isHidden: true,
+    miniCard: {
+      backgroundColor: '#ffffff',
+      logo: '1CC0an4oLJJJVU2lAFWLWdgTMhRJuNAD8',
+    },
   },
   {
     id: 5,
@@ -71,5 +91,10 @@ export const listPortfolio: ICard[] = [
       textBanner: 'GIT',
     },
     title: 'Oasis Fragrance 2',
+    isHidden: true,
+    miniCard: {
+      backgroundColor: '#ffffff',
+      logo: '1CC0an4oLJJJVU2lAFWLWdgTMhRJuNAD8',
+    },
   },
 ];

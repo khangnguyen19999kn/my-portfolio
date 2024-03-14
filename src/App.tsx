@@ -111,35 +111,35 @@ function App() {
           <div className="absolute top-11 right-[100px] z-[100] mobile:top-3 mobile:right-1 laptop:right-[100px]">
             <ToggleLanguage />
           </div>
-          {/* <section className="first">
+          <section className="section first">
             <div className="outer">
               <div className="inner">
                 <AvartaInfo />
               </div>
             </div>
           </section>
-          <section className="second">
+          <section className="section second">
             <div className="outer">
               <div className="inner">
                 <Intro />
               </div>
             </div>
           </section>
-          <section className="fourth">
+          <section className="section fourth">
             <div className="outer">
               <div className="inner">
                 <Experience />
               </div>
             </div>
-          </section> */}
-          <section className="fifth">
+          </section>
+          <section className="section fifth">
             <div className="outer">
               <div className="inner">
                 {width > 1279 ? <Portfolio /> : <NotSupport />}
               </div>
             </div>
           </section>
-          <section className="sixth">
+          <section className="section sixth">
             <div className="outer">
               <div className="inner">
                 <Footer />

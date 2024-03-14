@@ -1,5 +1,6 @@
 import { ICard } from '@/components/Card/Card';
 import { miniCardStyle } from '@/components/MiniCard/miniCardStyle';
+import { getURLImage } from '@/const/utils';
 import { Tooltip } from '@mantine/core';
 import { useState } from 'react';
 interface IMiniCardProps {
@@ -10,13 +11,17 @@ export default function MiniCardInMainScreen({
   card,
   onActionRepo,
 }: IMiniCardProps) {
-  const { classes, cx } = miniCardStyle();
+  const { logo, backgroundColor } = card.miniCard || {};
+
+  const { classes, cx } = miniCardStyle({
+    backgroundColorMiniCard: backgroundColor || '',
+  });
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
       className={cx(
         classes.containerCardInMainScreen,
-        isOpen && 'animate-ping',
+        isOpen && 'animate-customPing',
       )}
     >
       <Tooltip label={card.title}>
@@ -25,10 +30,12 @@ export default function MiniCardInMainScreen({
             setIsOpen(true);
             setTimeout(() => {
               onActionRepo(card, 'open');
-            }, 1000);
+            }, 500);
           }}
           className={classes.cardInMainScreen}
-        />
+        >
+          <img src={getURLImage(logo || '')} alt={card.title} />
+        </button>
       </Tooltip>
     </div>
   );
