@@ -106,7 +106,7 @@ export default function Experience() {
     <div ref={experineceRef} className={cx(classes.root, 'mobile:flex-col')}>
       <div
         className={cx(
-          'w-2/5 text-center mobile:w-full mobile:items-center mobile:p-0 mobile:text-center',
+          'w-2/5 text-center mobile:h-1/3 mobile:w-full mobile:items-center mobile:p-0 mobile:text-center tablet:p-0',
           classes.leftSection,
         )}
       >
@@ -118,10 +118,7 @@ export default function Experience() {
         </Text>
       </div>
       <div
-        className={cx(
-          'w-3/5 mobile:w-full mobile:py-0 mobile:px-1',
-          classes.rightSection,
-        )}
+        className={cx('w-3/5 mobile:w-full mobile:p-5', classes.rightSection)}
       >
         <Timeline active={2} bulletSize={30} lineWidth={2}>
           {listItemTimeLine.map((item) => (

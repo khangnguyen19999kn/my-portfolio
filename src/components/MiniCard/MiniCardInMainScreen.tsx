@@ -3,6 +3,7 @@ import { miniCardStyle } from '@/components/MiniCard/miniCardStyle';
 import { getURLImage } from '@/const/utils';
 import { Tooltip } from '@mantine/core';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 interface IMiniCardProps {
   card: ICard;
   onActionRepo: (item: ICard, action: 'open' | 'remove') => void;
@@ -12,7 +13,7 @@ export default function MiniCardInMainScreen({
   onActionRepo,
 }: IMiniCardProps) {
   const { logo, backgroundColor } = card.miniCard || {};
-
+  const { t } = useTranslation();
   const { classes, cx } = miniCardStyle({
     backgroundColorMiniCard: backgroundColor || '',
   });
@@ -24,7 +25,7 @@ export default function MiniCardInMainScreen({
         isOpen && 'animate-customPing',
       )}
     >
-      <Tooltip label={card.title}>
+      <Tooltip label={t('toolTip.message')}>
         <button
           onDoubleClick={() => {
             setIsOpen(true);

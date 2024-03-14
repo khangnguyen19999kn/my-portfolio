@@ -5,7 +5,7 @@ export default function NotSupport() {
   const { t } = useTranslation();
   return (
     <div className={classes.root}>
-      <div className="mt-20 flex justify-center">
+      <div className="flex justify-center pt-20">
         <img
           src="https://cdn-icons-png.flaticon.com/512/6023/6023986.png"
           alt="mobile"

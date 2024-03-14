@@ -10,7 +10,7 @@ export const useStyles = createStyles((theme) => ({
     height: '100%',
     backgroundColor: theme.colorScheme === 'dark' ? '#292a2a' : '#f8f8f8',
     display: 'flex',
-    alignItems: 'end',
+    alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
     padding: '0 50px 0 150px',

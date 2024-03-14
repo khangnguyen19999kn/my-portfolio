@@ -47,5 +47,8 @@
   "error": {
     "t1": "Sorry, this site is not supported on mobile",
     "t2": "Please visit on a desktop"
+  },
+  "toolTip":{
+    "message":"Double click to see the project !!!"
   }
 }

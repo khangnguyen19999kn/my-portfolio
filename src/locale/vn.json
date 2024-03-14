@@ -47,5 +47,8 @@
   "error": {
     "t1": "Trang web này không tương thích với thiết bị của bạn",
     "t2": "Vui lòng truy cập trang web này trên máy tính để có trải nghiệm tốt nhất"
+  },
+  "toolTip": {
+    "message": "Nhấn đúp để xem project !!!"
   }
 }

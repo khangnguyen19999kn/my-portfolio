@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
       <div
         className={cx(
-          'w-2/5 mobile:h-1/3 mobile:w-full mobile:items-center mobile:p-0 mobile:text-center',
+          'w-2/5 mobile:h-1/3 mobile:w-full mobile:items-center mobile:p-0 mobile:text-center tablet:p-0',
           classes.leftSection,
         )}
       >

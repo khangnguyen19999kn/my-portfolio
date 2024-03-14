@@ -10,7 +10,7 @@ export default function Intro() {
     <div className={cx(classes.root, 'mobile:flex-col')}>
       <div
         className={cx(
-          'flex w-2/5 flex-col items-center justify-center mobile:h-1/3 mobile:w-full mobile:p-0 laptop:w-2/5',
+          'flex w-2/5 flex-col items-center justify-center mobile:h-1/3 mobile:w-full mobile:p-0 tablet:w-2/5 tablet:p-0 laptop:w-2/5',
           classes.leftSection,
         )}
       >

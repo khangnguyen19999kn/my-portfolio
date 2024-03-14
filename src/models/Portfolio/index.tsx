@@ -37,11 +37,11 @@ export default function Portfolio() {
     >
       <div
         className={cx(
-          'relative w-2/5 mobile:h-1/3 mobile:w-full mobile:items-center mobile:p-0 mobile:text-center',
+          'relative flex w-2/5 items-center justify-center mobile:h-1/3 mobile:w-full mobile:items-center mobile:p-0 mobile:text-center',
           classes.leftSection,
         )}
       >
-        <div className="absolute top-[40%] right-[10%] mobile:right-[25%] ">
+        <div className="flex flex-col text-center">
           <Text className={classes.titleExp}>{t('portfolio.portfolio')}</Text>
           <Text>{t('portfolio.subPortfolio')}</Text>
         </div>
