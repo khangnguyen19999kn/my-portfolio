@@ -4,10 +4,11 @@ import { IconBrandFacebookFilled } from '@tabler/icons-react';
 import img from '@/public/images/325618096_916058312744106_937079095616907402_n.jpg';
 import Contact from '../Contact';
 import TextBlind from '@/components/TextBlind/TextBlind';
+import { useViewportSize } from '@mantine/hooks';
 
 export default function AvartaInfo() {
   const { classes, cx } = useStyles();
-
+  const { width } = useViewportSize();
   return (
     <div className="flex h-full mobile:flex-col laptop:h-[100vh]">
       <div
@@ -46,8 +47,8 @@ export default function AvartaInfo() {
           'h-full w-3/5 mobile:h-full mobile:w-full laptop:w-[70%]',
         )}
       >
-        <div className="content flex h-5/6 items-center mobile:flex-col tablet:relative tablet:flex-col laptop:ml-[20px] laptop:justify-between">
-          <div className="grpText top-[40%] flex  flex-1 items-start justify-center tablet:absolute tablet:flex-none tablet:p-0">
+        <div className="content flex h-5/6 items-center mobile:flex-col mobile:justify-around tablet:relative tablet:flex-col laptop:ml-[20px] laptop:justify-between">
+          <div className="grpText top-[40%] flex flex-1 items-start justify-center mobile:flex-none tablet:absolute tablet:flex-none tablet:p-0">
             <div className="flex flex-col mobile:items-center laptop:items-end">
               <Text
                 className={cx(
@@ -84,8 +85,9 @@ export default function AvartaInfo() {
               </a>
             </Button>
           </div>
-          <Contact />
+          {width < 640 && <Contact />}
         </div>
+        {width > 640 && <Contact />}
       </div>
     </div>
   );
