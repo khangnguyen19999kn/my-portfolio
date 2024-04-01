@@ -139,7 +139,7 @@ export const useStyles = createStyles((theme) => ({
     width: '150px',
     height: '20px',
     borderRadius: '100%',
-    backgroundColor: '#2F2D2C',
+    backgroundColor: theme.colorScheme === 'dark' ? '#fbfbfb' : '#2b2c2c',
     margin: '20px auto 0 auto',
     animation: `${shadowAvatar} 2s infinite`,
   },

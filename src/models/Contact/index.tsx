@@ -10,7 +10,7 @@ export default function AvartaInfo() {
   const { t } = useTranslation();
 
   return (
-    <div className="info flex justify-around pb-[50px] mobile:mt-[60px] mobile:w-full mobile:flex-col mobile:items-center mobile:justify-center mobile:pb-0 tablet:h-1/6 tablet:flex-col tablet:pb-1 laptop:h-1/6 laptop:items-end laptop:justify-around">
+    <div className="info flex justify-around pb-[50px] mobile:w-full mobile:flex-col mobile:items-center mobile:justify-center mobile:pb-0 tablet:h-1/6 tablet:flex-col tablet:pb-1 laptop:h-1/6 laptop:items-end laptop:justify-around">
       <div className="flex items-center justify-center">
         <IconMapPinFilled className="mr-4 opacity-50 mobile:hidden tablet:hidden" />
         <div className="mobile:flex mobile:h-full mobile:flex-col mobile:items-center tablet:text-center">

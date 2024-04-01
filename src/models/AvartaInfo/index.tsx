@@ -43,7 +43,7 @@ export default function AvartaInfo() {
       <div
         className={cx(
           classes.rightSection,
-          'h-full w-3/5 mobile:h-[25vh] mobile:w-full laptop:w-[70%]',
+          'h-full w-3/5 mobile:h-full mobile:w-full laptop:w-[70%]',
         )}
       >
         <div className="content flex h-5/6 items-center mobile:flex-col tablet:relative tablet:flex-col laptop:ml-[20px] laptop:justify-between">
@@ -84,9 +84,8 @@ export default function AvartaInfo() {
               </a>
             </Button>
           </div>
+          <Contact />
         </div>
-
-        <Contact />
       </div>
     </div>
   );
